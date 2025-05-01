@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>path_planning</name>
+  <version>0.0.0</version>
+  <description>Path planning and control for autonomous navigation</description>
+
+  <maintainer email="heung@todo.todo">heung</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- Build tools -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Core dependencies -->
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>qcar2_interfaces</depend>
+
+  <!-- Parameter service client (included in rclcpp but explicitly listed for clarity) -->
+  <depend>rclcpp_components</depend>
+
+  <!-- Optional: for Python scripts in the future -->
+  <exec_depend>rclpy</exec_depend>
+
+  <!-- Testing tools -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
